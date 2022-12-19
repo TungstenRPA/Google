@@ -33,7 +33,7 @@ This guide was created on 19 December 2022. Google may have made some changes si
 ![image](https://user-images.githubusercontent.com/47416964/208404528-f8bbce0a-4660-4fbf-86ba-a4300d1c1288.png)
 * Click **CREATE**
 ## Add test user to your OAuth consent screen.
-* Click **OAuth consent screen**
+* Click **OAuth consent screen**  
 ![image](https://user-images.githubusercontent.com/47416964/208404740-0a64b2a1-63c4-42da-94a1-5057f8d3295f.png)
 * Click **+ ADD USERS** and add the Google email address that you will use for the Management Console.
 ![image](https://user-images.githubusercontent.com/47416964/208405351-3c006b61-5f70-4b41-b538-0c5e48ebf3d8.png)
