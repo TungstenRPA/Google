@@ -92,6 +92,8 @@ This guide was created on 19 December 2022. Google may have made some changes si
 ![image](https://user-images.githubusercontent.com/47416964/208415672-8ce52d14-aa34-4478-88d1-68754f1aa3aa.png)
 * Click **Next**.  
 ![image](https://user-images.githubusercontent.com/47416964/208415765-5e6d5090-14f8-4cad-867d-bea72e1b1bd0.png)
-* Management Console will now show you the **Access Token** an **Refresh token** needed by the robot to access Google Calendar.  
+* Management Console will now show you the **Access Token** an **Refresh token** needed by the robot to access Google Calendar. *You will not see these tokens again, so if you want to copy them you need to do it now*.
 ![image](https://user-images.githubusercontent.com/47416964/208416041-52ee85c4-54bd-4d9d-bc78-097a117955a2.png)
+* 
+* you can now stop **ngrok**, it is no longer needed.
 ## Test your Robot
