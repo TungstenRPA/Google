@@ -40,6 +40,29 @@ This guide was created on 19 December 2022. Google may have made some changes si
 ## Enable Google Calender API
 * Click on **Enabled APIs & services** and **+ ENABLE APIS AND SERVICES**.  
 ![image](https://user-images.githubusercontent.com/47416964/208407182-6750f8fd-497a-4250-a4e7-25c249067bc4.png)
-
+* Search for **Calendar** and open **Google Calendar API**.
+![image](https://user-images.githubusercontent.com/47416964/208407451-80887782-adc7-4799-8d5f-91bb12e522fc.png)  
+*  Click **ENABLE**.  
+![image](https://user-images.githubusercontent.com/47416964/208407539-2ff9a4bd-ee73-4fe2-932d-359bd270e859.png)
+* Cick **CREDENTIALS** and Enable **Kofax RPA Calendar Robot**.  
+![image](https://user-images.githubusercontent.com/47416964/208407727-75889799-99f1-4117-bb8b-746ce5a9b5be.png)
+## Add Calender SCopes
+* Open **OAuth Consent Screen** (https://console.cloud.google.com/apis/credentials/consent).
+* Click **EDIT APP**.  
+![image](https://user-images.githubusercontent.com/47416964/208409952-67be182a-c7ce-412c-b487-ef512ff81d43.png)
+* Fill in the App Information however you like.
+* Add the ngrok URL to the **Authorized Domains**.  
+![image](https://user-images.githubusercontent.com/47416964/208410173-0dd87ddd-1dd2-40d8-80bb-97826b576273.png)
+* Click **SAVE AND CONTINUE**  
+![image](https://user-images.githubusercontent.com/47416964/208410238-1b984a52-d580-4657-a50e-bdd471889f88.png)
+* Click **ADD OR REMOVE SCOPES**  
+![image](https://user-images.githubusercontent.com/47416964/208410358-bb12af7f-3756-4670-a1b9-5999e419b916.png)
+* 
 
 ## Authenticate Management Console with Google
+* Open https://console.cloud.google.com/apis/credentials and click "Kofax RPA Calednar Robot" to see your **Client ID** and **Client Secret**.  
+![image](https://user-images.githubusercontent.com/47416964/208408456-77f3d962-72d7-4c3f-9a1e-5f7bacdfa662.png)
+* Open Management Console from your public IP address with HTTPS.  
+* Click **Repository/OAuth** and create a new **OAuth Application**.  
+![image](https://user-images.githubusercontent.com/47416964/208408066-9f81b067-2b23-42d0-9bf8-82f9232df543.png)
+* Copy the **Client ID** into the **Consumer Key** and **Client Secret** into the **Consumer Secret**. Be careful that you don't copy any trailing spaces!!
