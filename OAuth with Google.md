@@ -1,5 +1,5 @@
 # Authenticating with Google for Kofax RPA
-This guide shows how to get Kofax RPA working with Google Services like GMail, Google Calendar, Google Translate etc.
+This guide shows how to get Kofax RPA working with Google Services like GMail, Google Calendar, Google Translate etc. It uses the example of Google Calendar.  
 ## Add HTTPS to Management Console
 This guide was created on 19 December 2022. Google may have made some changes since then. Please report any changes by opening an [issue](https://github.com/KofaxRPA/Google/issues/new)!  
 *In order to authenticate with Google, your Management Console needs a public ip address using HTTPS. You only need this for the authentication process. Once you have the OAuth token you can disable public access.*  
