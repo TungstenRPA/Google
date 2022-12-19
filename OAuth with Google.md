@@ -92,8 +92,22 @@ This guide was created on 19 December 2022. Google may have made some changes si
 ![image](https://user-images.githubusercontent.com/47416964/208415672-8ce52d14-aa34-4478-88d1-68754f1aa3aa.png)
 * Click **Next**.  
 ![image](https://user-images.githubusercontent.com/47416964/208415765-5e6d5090-14f8-4cad-867d-bea72e1b1bd0.png)
-* Management Console will now show you the **Access Token** an **Refresh token** needed by the robot to access Google Calendar. *You will not see these tokens again, so if you want to copy them you need to do it now*.
+* Management Console will now show you the **Access Token** an **Refresh token** needed by the robot to access Google Calendar
+* Copy both of these tokens **NOW**! You won't see them again. You need to copy them to test your robot in Design Studio. A robot in Design Studio cannot retrieve oAuth credentials from the Management Console.  
+* You will not see these tokens again, so if you want to copy them you need to do it now*.
 ![image](https://user-images.githubusercontent.com/47416964/208416041-52ee85c4-54bd-4d9d-bc78-097a117955a2.png)
-* 
 * you can now stop **ngrok**, it is no longer needed.
 ## Test your Robot
+* Download and open the robot **GoogleCalendar_CreateEvent.robot** along with **GoogleCalendar_Event.type**
+* Open the variable **oAuth** and paste in the key, secret and two tokens from above.
+![image](https://user-images.githubusercontent.com/47416964/208424843-6695b40c-64dc-4f5f-8a9a-836f83b90696.png)
+* Open the **event** variable and Change the *start* and *end* dates to Now() and then adjust them to later today or tomorrow. Edit any other attributes you like.
+* The robot creates to JSON needed to send to the Google Calendar API.
+* Google Calender API is called from the **Create Event** step, which is a REST POST step, with JSON body and OAuth Authetication.  If the result is successful, the Google returns the data for the created event.  
+![image](https://user-images.githubusercontent.com/47416964/208425355-3dfe1704-2ed7-4404-8713-9eaa68173dc5.png)
+* You can also see the event in [Google Calendar](https://calendar.google.com)  
+![image](https://user-images.githubusercontent.com/47416964/208425509-6345ab93-5ded-40c3-8019-8441403cb861.png)
+
+
+
+
