@@ -1,6 +1,7 @@
 # Google
 
-You will need to create [OAuth](OAuth%20with%20Google.md) credentials to interact with Google Services, including Google Calendar, [Google Drive](https://developers.google.com/drive/api/v3/reference/) and many others.
+You will need to create [OAuth](OAuth%20with%20Google.md) credentials to interact with Google Services, including Google Calendar, [Google Drive](https://developers.google.com/drive/api/v3/reference/) and many others.  
+[GMail Robot](https://github.com/KofaxRPA/Mail/tree/master/GMail)
 ## Google Calendar
 This robot creates events in a Google Calendar using https://developers.google.com/calendar/v3/reference/events/insert.  
 Fill in the event object with all the details, and the robot will create the Event.  
