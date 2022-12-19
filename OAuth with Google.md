@@ -57,12 +57,41 @@ This guide was created on 19 December 2022. Google may have made some changes si
 ![image](https://user-images.githubusercontent.com/47416964/208410238-1b984a52-d580-4657-a50e-bdd471889f88.png)
 * Click **ADD OR REMOVE SCOPES**  
 ![image](https://user-images.githubusercontent.com/47416964/208410358-bb12af7f-3756-4670-a1b9-5999e419b916.png)
-* 
+* In **Filter** search for **Calendar**.  
+![image](https://user-images.githubusercontent.com/47416964/208410678-fa114cc0-f4b8-4638-8613-720f32c24a35.png)
+* Select **Gogle Calendar API**, type **events** and press ENTER.  
+* Select **See, create, change, and delete events on Google calendars you own**.  
+![image](https://user-images.githubusercontent.com/47416964/208410950-dc927d42-c9df-49d5-ab06-4b6e06ff22c0.png)
+*  Click **UPDATE**.
 
-## Authenticate Management Console with Google
-* Open https://console.cloud.google.com/apis/credentials and click "Kofax RPA Calednar Robot" to see your **Client ID** and **Client Secret**.  
+## Create OAuth Application in Management Console
+* Open https://console.cloud.google.com/apis/credentials and click "Kofax RPA Calendar Robot" to see your **Client ID** and **Client Secret**.  
 ![image](https://user-images.githubusercontent.com/47416964/208408456-77f3d962-72d7-4c3f-9a1e-5f7bacdfa662.png)
 * Open Management Console from your public IP address with HTTPS.  
 * Click **Repository/OAuth** and create a new **OAuth Application**.  
 ![image](https://user-images.githubusercontent.com/47416964/208408066-9f81b067-2b23-42d0-9bf8-82f9232df543.png)
 * Copy the **Client ID** into the **Consumer Key** and **Client Secret** into the **Consumer Secret**. Be careful that you don't copy any trailing spaces!!
+* Enter **https://www.googleapis.com/auth/calendar.events.owned** as Scope.  
+![image](https://user-images.githubusercontent.com/47416964/208411329-37a90031-7a7b-418c-baa4-9388b2f5e0cb.png)
+* Press OK.
+## Create OAuth User in Management Console
+* Create a new **OAuth User** in Management Console.  
+![image](https://user-images.githubusercontent.com/47416964/208411505-053264ca-5e4f-482d-8240-75cddf2ed2f1.png)
+* Select the Application and enter a user name.  
+![image](https://user-images.githubusercontent.com/47416964/208411736-7e9f242f-f96b-4ca0-ab63-5b6a834b0b8d.png)
+* Click **Next**.
+* Click **Authorization Link** to open a new window.  
+![image](https://user-images.githubusercontent.com/47416964/208411876-7a20a08e-ba5f-43d5-8c36-833382597bd6.png)
+* Choose a Google Account to continue.  
+![image](https://user-images.githubusercontent.com/47416964/208415138-c5ad4d32-1cbe-4239-9b25-b2768cdcc92f.png)
+* Click **Continue** to ignore the warning about this being a test app.  
+![image](https://user-images.githubusercontent.com/47416964/208415227-5d83f919-1acc-4e0a-895a-f16727e1d8c5.png)
+* You are now at the OAuth screen. Google is asking your permission to allow Management Console to be able to **see, create, change and delete events on Google Calender**. Click **Continue**.  
+![image](https://user-images.githubusercontent.com/47416964/208415444-c83f98ec-9b11-4f2a-8a01-d26aa4ec9176.png)  
+* Close the Browser Tab.  
+![image](https://user-images.githubusercontent.com/47416964/208415672-8ce52d14-aa34-4478-88d1-68754f1aa3aa.png)
+* Click **Next**.  
+![image](https://user-images.githubusercontent.com/47416964/208415765-5e6d5090-14f8-4cad-867d-bea72e1b1bd0.png)
+* Management Console will now show you the **Access Token** an **Refresh token** needed by the robot to access Google Calendar.  
+![image](https://user-images.githubusercontent.com/47416964/208416041-52ee85c4-54bd-4d9d-bc78-097a117955a2.png)
+## Test your Robot
