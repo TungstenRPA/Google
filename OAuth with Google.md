@@ -59,7 +59,7 @@ This guide was created on 19 December 2022. Google may have made some changes si
 ![image](https://user-images.githubusercontent.com/47416964/208410358-bb12af7f-3756-4670-a1b9-5999e419b916.png)
 * In **Filter** search for **Calendar**.  
 ![image](https://user-images.githubusercontent.com/47416964/208410678-fa114cc0-f4b8-4638-8613-720f32c24a35.png)
-* Select **Gogle Calendar API**, type **events** and press ENTER.  
+* Select **Google Calendar API**, type **events** and press ENTER.  
 * Select **See, create, change, and delete events on Google calendars you own**.  
 ![image](https://user-images.githubusercontent.com/47416964/208410950-dc927d42-c9df-49d5-ab06-4b6e06ff22c0.png)
 *  Click **UPDATE**.
